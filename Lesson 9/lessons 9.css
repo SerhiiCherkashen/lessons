@@ -1,0 +1,15 @@
+.div {
+  display: flex;
+  flex-flow: row wrap;
+  width: 360px;
+  padding: 25px;
+}
+.square {
+  background: blue;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+.backgroundDiv {
+  background: rgb(42, 183, 248);
+}
