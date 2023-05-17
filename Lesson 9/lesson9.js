@@ -10,14 +10,14 @@
 
 
 
-let text = document.createTextNode("hello world!!!")
+const text = document.createTextNode("hello world!!!")
 
 document.body.before(text)
 
 let div1 = document.createElement("div")
 div1.classList.add("div", "backgroundDiv",)
 
-let colorRandom = () => {
+const colorRandom = () => {
     let a = 0
     let b = 0
     let c = 0
@@ -34,19 +34,20 @@ let colorRandom = () => {
     return `rgb(${a}, ${b}, ${c})`
 }
 
-let generateBlocks = () => {
+const generateBlocks = () => {
     for (let i = 1; i <= 25; i++) {
-        let square = document.createElement("div")
+        const square = document.createElement("div")
         let sqr = square
         sqr.classList.add("square")
 
         setInterval(() => {
-            let color = colorRandom()
+            const color = colorRandom()
             sqr.style.background = color
         }, 1000);
 
         div1.append(sqr)
     }
+
     document.body.append(div1)
 }
 
@@ -55,7 +56,7 @@ generateBlocks()
 
 
 
-let generateBlocks1 = () => {
+const generateBlocks1 = () => {
     for (let i = 1; i <= 25; i++) {
         let square = document.createElement("div")
         let sqr = square
@@ -64,6 +65,7 @@ let generateBlocks1 = () => {
         sqr.style.background = color
         div1.append(sqr)
     }
+
     document.body.append(div1)
 }
 

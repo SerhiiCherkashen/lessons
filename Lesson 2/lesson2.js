@@ -26,13 +26,13 @@
 
 
 
-let n = Math.round(Number(prompt("Number")))
-let m = Math.round(Number(prompt("Second Number")))
-let queshen = Boolean(confirm("True -- ok  or False -- cancel ?"))
+const n = Math.round(Number(prompt("Number")))
+const m = Math.round(Number(prompt("Second Number")))
+const queshen = Boolean(confirm("True -- ok  or False -- cancel ?"))
 
-
-let sumFn = (n, m, boolean) => {
+const sumFn = (n, m, boolean) => {
     let sum = 0
+
     for (let item = n; item <= m; item++) {
         if (boolean) {
             if (item % 2) {

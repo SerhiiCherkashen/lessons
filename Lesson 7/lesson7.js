@@ -47,16 +47,17 @@ function getTotalTaxes() {
 }
 
 function getMySalary() {
-    let inter = setInterval(() => {
-        let salary = (Math.random() * (2000 - 1500 + 1) + 1500).toFixed(0)
-        let taxes = (salary * this.tax).toFixed(2)
-        let total = {
+    const inter = setInterval(() => {
+        const salary = (Math.random() * (2000 - 1500 + 1) + 1500).toFixed(0)
+        const taxes = (salary * this.tax).toFixed(2)
+        const total = {
             salary,
             taxes,
             profit: salary - taxes
         }
         console.log(total)
     }, 1000);
+
     setTimeout(() => {
         clearInterval(inter)
     }, 10000);

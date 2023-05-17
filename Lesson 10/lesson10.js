@@ -12,7 +12,6 @@
 //
 
 
-
 function playMusic(letter) {
     if (letter === "a") {
         let audio = new Audio("1.mp3")

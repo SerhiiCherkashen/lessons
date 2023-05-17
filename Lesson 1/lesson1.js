@@ -14,31 +14,18 @@
 // console.log() / document.writeln
 
 
+const car = 15.678
+const banana = 123.965
+const cup = 90.2345
 
+const max = Math.max(car, banana, cup)
+const min = Math.min(car, banana, cup)
 
-// --------------------------------------1----------------------------------------
+const sum = car + banana + cup
 
-let car = 15.678
-let banana = 123.965
-let cup = 90.2345
+const sumFloor = Math.ceil(sum)
 
-
-// ---------------------------------------2----------------------------------------
-
-let max = Math.max(car, banana, cup)
-let min = Math.min(car, banana, cup)
-
-// ---------------------------------------3----------------------------------------
-
-let sum = car + banana + cup
-
-// ---------------------------------------4---------------------------------------
-
-let sumFloor = Math.ceil(sum)
-
-// ---------------------------------------5----------------------------------------
-
-let fn = () => {
+const fn = () => {
     if (sumFloor % 2) {
         console.log("5 sumFloor --- nechetnii ")
     } else {
@@ -46,30 +33,16 @@ let fn = () => {
     }
 }
 
-// ---------------------------------------6----------------------------------------
+const myCash = 500
+const result = myCash - car - banana - cup
 
-let myCash = 500
-let result = myCash - car - banana - cup
+const middleCosts = sum / 3
 
-// ---------------------------------------7----------------------------------------
+const discount = Math.random().toFixed(2) * 100
 
-let middleCosts = sum / 3
+const discountPrice = (sum - sum * (discount / 100)).toFixed(2)
 
-// ---------------------------------------8----------------------------------------
-
-let discount = Math.random().toFixed(2) * 100
-
-// ---------------------------------------9----------------------------------------
-
-let discountPrice = (sum - sum * (discount / 100)).toFixed(2)
-
-// ---------------------------------------10----------------------------------------
-
-let saved = (sum * (discount / 100)).toFixed(2)
-
-// ---------------------------------------------------------------------------------
-
-
+const saved = (sum * (discount / 100)).toFixed(2)
 
 
 console.log(" Lesson 1 ")

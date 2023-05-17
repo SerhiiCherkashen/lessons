@@ -26,8 +26,7 @@
 
 const students = ["Олександр", "Игор", "Олена", "Ира", "Олексий", "Свитлана"];
 const themes = ["Диференцийне ривняння", "Теория автоматив", "Алгоритми и структури даних"];
-let marks = [4, 5, 5, 3, 4, 5];
-
+const marks = [4, 5, 5, 3, 4, 5];
 
 
 const pairFn = (name) => {
@@ -93,11 +92,6 @@ maxSpred = (numder) => {
 
     return Math.max(...arr)
 }
-
-
-
-
-
 
 
 console.log("Lesson 4")

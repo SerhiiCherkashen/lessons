@@ -82,7 +82,7 @@ const students = [{
     }
 }];
 
-let getSubjects = (student) => {
+const getSubjects = (student) => {
     let newKeys = []
 
     students.forEach(i => {
@@ -101,7 +101,7 @@ let getSubjects = (student) => {
     return newKeys
 }
 
-let getAverageMark = (student) => {
+const getAverageMark = (student) => {
     let sum = 0
 
     students.forEach(i => {
@@ -120,7 +120,7 @@ let getAverageMark = (student) => {
     return result
 }
 
-let getStudentInfo = (student) => {
+const getStudentInfo = (student) => {
     let obj = {}
     let averageMark = getAverageMark(student)
 
@@ -135,7 +135,7 @@ let getStudentInfo = (student) => {
     return obj
 }
 
-let getStudentsNames = (array) => {
+const getStudentsNames = (array) => {
     let asd = []
 
     array.map(i => {
@@ -145,13 +145,13 @@ let getStudentsNames = (array) => {
     return asd.sort()
 }
 
-let getStudentsNames2 = (array) => {
+const getStudentsNames2 = (array) => {
     let ttt = array.map(i => i.name)
 
     return ttt.sort()
 }
 
-let getBestStudent = (students) => {
+const getBestStudent = (students) => {
     let well = {
         name: "notName",
         ball: 0
@@ -167,7 +167,7 @@ let getBestStudent = (students) => {
     return well
 }
 
-let calculateWordLetters = (word) => {
+const calculateWordLetters = (word) => {
     let split = (String(word)).split("")
     let obj = {}
 

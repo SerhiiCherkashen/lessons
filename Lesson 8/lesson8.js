@@ -29,12 +29,15 @@ class Student {
         this.marks = marks
         this.rezerv = this.marks
     }
+
     getInfo = () => {
         console.log(`Student ${this.course} course ${this.university}, ${this.fullName}`)
     }
+
     getMarks = () => {
         console.log(this.marks)
     }
+
     get markss() {
         if (this.marks === null) {
             console.log("Nihya")
@@ -42,12 +45,14 @@ class Student {
             console.log(this.marks)
         }
     }
+
     set markss(mark) {
         if (this.marks !== null) {
             this.marks.push(mark)
             this.markss
         }
     }
+
     getAverageMark = () => {
         let sum = 0
         let iter
@@ -58,9 +63,11 @@ class Student {
         let middleSum = sum / iter
         console.log(middleSum)
     }
+
     dismiss = () => {
         this.marks = null
     }
+
     recover = () => {
         this.marks = this.rezerv
         console.log("Lets Go")

@@ -27,9 +27,9 @@
 
 
 
-let getMaxDigit = (number) => {
-    let string = String(number)
-    let array = string.split('')
+const getMaxDigit = (number) => {
+    const string = String(number)
+    const array = string.split('')
     let max = array[0]
 
     for (let y = 1; y < array.length; y++) {
@@ -37,23 +37,25 @@ let getMaxDigit = (number) => {
             max = array[y]
         }
     }
-    let maxDigit = (` ${number} max : ${max}`)
+    const maxDigit = (` ${number} max : ${max}`)
 
     return maxDigit
 }
 
 
-let maxSpredd = (numder) => {
-    num = String(numder)
+const maxSpredd = (numder) => {
+    let num = String(numder)
     let arr = []
     arr = num.split("")
     console.log(arr)
+
     return Math.max(...arr)
 }
 
 
-let degreeNumber = (number, degree) => {
+const degreeNumber = (number, degree) => {
     let num = number
+
     if (degree - Math.floor(degree) !== 0) {
         return " Vvedit cile chislo !!!"
     }
@@ -73,29 +75,32 @@ let degreeNumber = (number, degree) => {
         for (let w = 1; w < degree; w++) {
             num = num * number
         }
+
         return `${number} in ${degree} degree = ${num} `
     }
 }
 
-let firstleter = (word) => {
+const firstleter = (word) => {
     let arrWord = word.split("")
     let arrFirst = []
     arrFirst.push(arrWord[0])
     arrWord.splice(0, 1)
     let joinFirst = arrFirst.join("")
     let joinSecond = arrWord.join("")
-    let f = joinFirst.toUpperCase()
-    let s = joinSecond.toLowerCase()
+    const f = joinFirst.toUpperCase()
+    const s = joinSecond.toLowerCase()
+
     return ` ${word} => ${f + s} `
 }
 
-let tax = (cash, tax) => {
+const tax = (cash, tax) => {
     tax = tax / 100
-    let remainder = cash - (cash * tax)
+    const remainder = cash - (cash * tax)
+
     return `With ${cash} remainder ${remainder} Tax : ${tax * 100}% `
 }
 
-let valuta = (cash) => {
+const valuta = (cash) => {
     let splCash = cash.split("")
     let val = []
     val = splCash[splCash.length - 1]
@@ -110,18 +115,18 @@ let valuta = (cash) => {
     if (val === "u") {
         joinGroshi = joinGroshi / 40 + "$"
     }
+
     return `${cash} => ${joinGroshi} `
 }
 
-let deleteLetters = (word, fff) => {
+const deleteLetters = (word, fff) => {
     let www = word.split(fff)
-    let eee = www.join('')
+    const eee = www.join('')
+
     return eee
 }
 
-let maxSpred = (numder) => {
-    return Math.max(numder)
-}
+const maxSpred = (numder) => { Math.max(numder) }
 
 
 
